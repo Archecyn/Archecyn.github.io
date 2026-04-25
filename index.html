@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archecyn | GitHub Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 1000px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #94a3b8;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      position: relative;
+      background: #0f172a;
+      border-radius: 20px;
+      padding: 25px 15px;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .card:nth-child(2) { animation-delay: 1s; }
+    .card:nth-child(3) { animation-delay: 2s; }
+    .card:nth-child(4) { animation-delay: 3s; }
+    .card:nth-child(5) { animation-delay: 4s; }
+    .card:nth-child(6) { animation-delay: 5s; }
+
+    .card:hover {
+      transform: translateY(-12px) scale(1.05);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 15px;
+      fill: #38bdf8;
+    }
+
+    .title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* Tooltip */
+    .tooltip {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      background: #1e293b;
+      color: #cbd5f5;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      width: 180px;
+    }
+
+    .card:hover .tooltip {
+      opacity: 1;
+      transform: translate(-50%, 120%);
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Archecyn</h1>
+    <p>Data Engineering • AI • Cloud • Systems</p>
+
+    <div class="grid">
+
+      <a class="card" href="https://github.com/Archecyn/machine-learning" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a5 5 0 015 5v1h1a4 4 0 010 8h-1v1a5 5 0 01-10 0v-1H6a4 4 0 010-8h1V7a5 5 0 015-5z"/></svg>
+        <div class="title">Machine Learning</div>
+        <div class="tooltip">Models, training pipelines, experimentation and evaluation frameworks.</div>
+      </a>
+
+      <a class="card" href="https://github.com/Archecyn/programming" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M8 5l-6 7 6 7M16 5l6 7-6 7"/></svg>
+        <div class="title">Programming</div>
+        <div class="tooltip">Core engineering skills across languages, algorithms and system design.</div>
+      </a>
+
+      <a class="card" href="https://github.com/Archecyn/statistical-modelling" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3 3h2v18H3zm4 10h2v8H7zm4-6h2v14h-2zm4 4h2v10h-2zm4-8h2v18h-2z"/></svg>
+        <div class="title">Statistical Modelling</div>
+        <div class="tooltip">Forecasting, probability models, and data-driven decision systems.</div>
+      </a>
+
+      <a class="card" href="https://github.com/Archecyn/cloud-data-platforms" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M6 19h13a4 4 0 000-8 5 5 0 00-9.7-1.5A4 4 0 006 19z"/></svg>
+        <div class="title">Cloud Data Platforms</div>
+        <div class="tooltip">Modern data stacks: pipelines, orchestration, and scalable architectures.</div>
+      </a>
+
+      <a class="card" href="https://github.com/Archecyn/natural-language-processing" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v12H5.17L4 17.17V4z"/></svg>
+        <div class="title">NLP</div>
+        <div class="tooltip">LLMs, embeddings, text pipelines, and language-based AI systems.</div>
+      </a>
+
+      <a class="card" href="https://github.com/Archecyn/quantum-machine-learning" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a6 6 0 016 6 6 6 0 11-6-6z"/></svg>
+        <div class="title">Quantum ML</div>
+        <div class="tooltip">Exploration of quantum algorithms applied to machine learning problems.</div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
