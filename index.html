@@ -13,6 +13,22 @@ body {
   color: #020617;
 }
 
+.main-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #0ea5e9, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+}
+
 .container {
   max-width: 1000px;
   margin: auto;
@@ -133,7 +149,7 @@ body {
 
 <body>
 <div class="container">
-
+<h1 class="main-title">Isaac's Portfolio</h1>
 <div class="hero">
   <h2>Featured Project</h2>
   <h1>Statistical Modelling for Decision Intelligence</h1>
