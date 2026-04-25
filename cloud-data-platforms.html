@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Data Platforms | Archecyn</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #020617;
+  color: #e2e8f0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.diagram {
+  margin-top: 40px;
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<a href="index.html" class="back">← Back</a>
+
+<h1>Cloud Data Platforms</h1>
+
+<p>
+This project demonstrates modern data platform architecture across cloud providers,
+including pipeline orchestration, scalable data processing, and medallion architecture design.
+It integrates tooling across AWS, Azure, GCP, and Databricks to create flexible, production-ready systems.
+</p>
+
+<div class="diagram">
+
+<svg width="100%" height="300" viewBox="0 0 800 300">
+
+  <!-- Center -->
+  <rect x="300" y="110" width="200" height="80" rx="15" fill="#38bdf8"/>
+  <text x="400" y="150" text-anchor="middle" fill="#020617" font-size="16" font-weight="bold">
+    Data Platform
+  </text>
+
+  <!-- AWS -->
+  <rect x="50" y="50" width="150" height="60" rx="10" fill="#f59e0b"/>
+  <text x="125" y="85" text-anchor="middle" fill="#020617">AWS</text>
+
+  <!-- Azure -->
+  <rect x="600" y="50" width="150" height="60" rx="10" fill="#2563eb"/>
+  <text x="675" y="85" text-anchor="middle" fill="white">Azure</text>
+
+  <!-- GCP -->
+  <rect x="50" y="200" width="150" height="60" rx="10" fill="#22c55e"/>
+  <text x="125" y="235" text-anchor="middle" fill="#020617">GCP</text>
+
+  <!-- Databricks -->
+  <rect x="600" y="200" width="150" height="60" rx="10" fill="#ef4444"/>
+  <text x="675" y="235" text-anchor="middle" fill="white">Databricks</text>
+
+  <!-- Lines -->
+  <line x1="200" y1="80" x2="300" y2="130" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="600" y1="80" x2="500" y2="130" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="200" y1="230" x2="300" y2="170" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="600" y1="230" x2="500" y2="170" stroke="#94a3b8" stroke-width="2"/>
+
+</svg>
+
+</div>
+
+<a class="repo-link" href="https://github.com/Archecyn/cloud-data-platforms" target="_blank">
+View Repository on GitHub
+</a>
+
+</div>
+</body>
+</html>
