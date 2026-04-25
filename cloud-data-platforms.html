@@ -3,111 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cloud Data Platforms | Archecyn</title>
+<title>Cloud Data Platforms | Isaac's Portfolio</title>
 
 <style>
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #020617;
-  color: #e2e8f0;
-  padding: 40px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-h1 {
-  margin-bottom: 10px;
+.back-link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
 }
 
-p {
-  color: #94a3b8;
-  line-height: 1.6;
+.hero {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    color: white;
+    border-radius: 18px;
+    padding: 40px;
 }
 
-.repo-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 16px;
-  background: #38bdf8;
-  color: #020617;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
 }
 
-.back {
-  display: inline-block;
-  margin-bottom: 30px;
-  color: #94a3b8;
-  text-decoration: none;
+.hero p {
+    font-size: 1.15rem;
+    max-width: 780px;
+    margin-top: 15px;
+    line-height: 1.6;
 }
 
-.diagram {
-  margin-top: 40px;
-  background: #0f172a;
-  border-radius: 16px;
-  padding: 20px;
+.section {
+    margin-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+ul {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.repo-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.repo-btn:hover {
+    background: #1d4ed8;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    margin-top: 60px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
-<a href="index.html" class="back">← Back</a>
+<a href="index.html" class="back-link">← Back to Portfolio</a>
 
-<h1>Cloud Data Platforms</h1>
+<div class="hero">
+    <h1>Cloud Data Platforms</h1>
+    <p>
+        Designing modern data ecosystems that ingest, transform, govern, and serve data at scale.
+        This project area focuses on cloud-native architecture, orchestration, analytics engineering,
+        platform reliability, and multi-cloud delivery across AWS, Azure, GCP, and Databricks.
+    </p>
+</div>
 
-<p>
-This project demonstrates modern data platform architecture across cloud providers,
-including pipeline orchestration, scalable data processing, and medallion architecture design.
-It integrates tooling across AWS, Azure, GCP, and Databricks to create flexible, production-ready systems.
-</p>
+<div class="section grid">
 
-<div class="diagram">
+<div class="card">
+    <h2>Project Focus</h2>
+    <p>
+        This repository demonstrates enterprise-grade platform thinking: integrating cloud services,
+        scalable pipelines, governance controls, and analytics tooling into a unified data platform.
+    </p>
 
-<svg width="100%" height="300" viewBox="0 0 800 300">
+    <ul>
+        <li>Data Lake & Warehouse Architecture</li>
+        <li>ETL / ELT Pipelines</li>
+        <li>Workflow Orchestration</li>
+        <li>CI/CD & Infrastructure as Code</li>
+        <li>Monitoring & Reliability</li>
+        <li>Multi-Cloud Delivery Models</li>
+    </ul>
 
-  <!-- Center -->
-  <rect x="300" y="110" width="200" height="80" rx="15" fill="#38bdf8"/>
-  <text x="400" y="150" text-anchor="middle" fill="#020617" font-size="16" font-weight="bold">
-    Data Platform
-  </text>
+    <a class="repo-btn" href="https://github.com/Archecyn/cloud-data-platforms" target="_blank">
+        View GitHub Repository
+    </a>
+</div>
 
-  <!-- AWS -->
-  <rect x="50" y="50" width="150" height="60" rx="10" fill="#f59e0b"/>
-  <text x="125" y="85" text-anchor="middle" fill="#020617">AWS</text>
+<div class="card">
 
-  <!-- Azure -->
-  <rect x="600" y="50" width="150" height="60" rx="10" fill="#2563eb"/>
-  <text x="675" y="85" text-anchor="middle" fill="white">Azure</text>
+<svg viewBox="0 0 560 440">
 
-  <!-- GCP -->
-  <rect x="50" y="200" width="150" height="60" rx="10" fill="#22c55e"/>
-  <text x="125" y="235" text-anchor="middle" fill="#020617">GCP</text>
+<!-- Background -->
+<rect x="0" y="0" width="560" height="440" rx="18" fill="#eff6ff"/>
 
-  <!-- Databricks -->
-  <rect x="600" y="200" width="150" height="60" rx="10" fill="#ef4444"/>
-  <text x="675" y="235" text-anchor="middle" fill="white">Databricks</text>
+<!-- Top cloud providers -->
+<rect x="30" y="35" width="110" height="55" rx="12" fill="#f59e0b"/>
+<text x="85" y="68" text-anchor="middle" fill="#111827" font-size="15" font-weight="bold">AWS</text>
 
-  <!-- Lines -->
-  <line x1="200" y1="80" x2="300" y2="130" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="600" y1="80" x2="500" y2="130" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="200" y1="230" x2="300" y2="170" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="600" y1="230" x2="500" y2="170" stroke="#94a3b8" stroke-width="2"/>
+<rect x="160" y="35" width="110" height="55" rx="12" fill="#2563eb"/>
+<text x="215" y="68" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Azure</text>
+
+<rect x="290" y="35" width="110" height="55" rx="12" fill="#22c55e"/>
+<text x="345" y="68" text-anchor="middle" fill="white" font-size="15" font-weight="bold">GCP</text>
+
+<rect x="420" y="35" width="110" height="55" rx="12" fill="#ef4444"/>
+<text x="475" y="68" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Databricks</text>
+
+<!-- Ingestion Layer -->
+<rect x="110" y="130" width="340" height="55" rx="14" fill="#0ea5e9"/>
+<text x="280" y="163" text-anchor="middle" fill="white" font-size="16" font-weight="bold">
+Ingestion Layer
+</text>
+
+<!-- Processing Layer -->
+<rect x="110" y="215" width="340" height="55" rx="14" fill="#6366f1"/>
+<text x="280" y="248" text-anchor="middle" fill="white" font-size="16" font-weight="bold">
+Transform / Orchestrate / Govern
+</text>
+
+<!-- Serving Layer -->
+<rect x="110" y="300" width="340" height="55" rx="14" fill="#22c55e"/>
+<text x="280" y="333" text-anchor="middle" fill="white" font-size="16" font-weight="bold">
+BI • APIs • ML • Reporting
+</text>
+
+<!-- Connectors top -->
+<line x1="85" y1="90" x2="180" y2="130" stroke="#64748b" stroke-width="2"/>
+<line x1="215" y1="90" x2="240" y2="130" stroke="#64748b" stroke-width="2"/>
+<line x1="345" y1="90" x2="320" y2="130" stroke="#64748b" stroke-width="2"/>
+<line x1="475" y1="90" x2="380" y2="130" stroke="#64748b" stroke-width="2"/>
+
+<!-- Vertical arrows -->
+<line x1="280" y1="185" x2="280" y2="215" stroke="#64748b" stroke-width="3"/>
+<polygon points="280,215 272,200 288,200" fill="#64748b"/>
+
+<line x1="280" y1="270" x2="280" y2="300" stroke="#64748b" stroke-width="3"/>
+<polygon points="280,300 272,285 288,285" fill="#64748b"/>
+
+<!-- Footer labels -->
+<text x="70" y="395" font-size="14" fill="#475569">
+Scalable Architecture • Automation • Governance • Analytics
+</text>
 
 </svg>
 
 </div>
 
-<a class="repo-link" href="https://github.com/Archecyn/cloud-data-platforms" target="_blank">
-View Repository on GitHub
-</a>
+</div>
+
+<div class="section card">
+<h2>Business Applications</h2>
+<p>
+Cloud data platforms enable executive reporting, real-time analytics, self-service BI,
+machine learning pipelines, regulatory compliance, cost optimisation, and trusted data
+delivery across the enterprise. Strong platforms convert fragmented systems into strategic assets.
+</p>
+</div>
+
+<div class="footer">
+Isaac's Data Science, AI and Engineering Portfolio
+</div>
 
 </div>
+
 </body>
 </html>
