@@ -1,3 +1,224 @@
-<h1>Machine Learning</h1>
-<p>Development of machine learning systems including model training, evaluation pipelines, and production-ready workflows.</p>
-<a href="https://github.com/Archecyn/machine-learning">View Repo</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Learning | Isaac's Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.hero {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    color: white;
+    border-radius: 18px;
+    padding: 40px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+ul {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.repo-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.repo-btn:hover {
+    background: #1d4ed8;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    margin-top: 60px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back-link">← Back to Portfolio</a>
+
+<div class="hero">
+    <h1>Machine Learning</h1>
+    <p>
+        Building intelligent systems that learn from data. This project area focuses on predictive modelling,
+        classification, regression, feature engineering, evaluation pipelines, and production-ready machine learning workflows.
+    </p>
+</div>
+
+<div class="section grid">
+
+<div class="card">
+    <h2>Project Focus</h2>
+    <p>
+        This repository demonstrates practical machine learning solutions using structured and unstructured data.
+        It includes end-to-end model development workflows designed for real-world applications.
+    </p>
+
+    <ul>
+        <li>Supervised Learning</li>
+        <li>Regression & Classification</li>
+        <li>Feature Engineering</li>
+        <li>Model Validation & Metrics</li>
+        <li>Pipeline Automation</li>
+        <li>Deployment Readiness</li>
+    </ul>
+
+    <a class="repo-btn" href="https://github.com/Archecyn/machine-learning" target="_blank">
+        View GitHub Repository
+    </a>
+</div>
+
+<div class="card">
+
+<svg viewBox="0 0 500 420">
+
+<!-- Background -->
+<rect x="0" y="0" width="500" height="420" rx="18" fill="#eff6ff"/>
+
+<!-- Input Layer -->
+<circle cx="80" cy="90" r="18" fill="#2563eb"/>
+<circle cx="80" cy="170" r="18" fill="#2563eb"/>
+<circle cx="80" cy="250" r="18" fill="#2563eb"/>
+<circle cx="80" cy="330" r="18" fill="#2563eb"/>
+
+<!-- Hidden Layer -->
+<circle cx="250" cy="70" r="18" fill="#0ea5e9"/>
+<circle cx="250" cy="140" r="18" fill="#0ea5e9"/>
+<circle cx="250" cy="210" r="18" fill="#0ea5e9"/>
+<circle cx="250" cy="280" r="18" fill="#0ea5e9"/>
+<circle cx="250" cy="350" r="18" fill="#0ea5e9"/>
+
+<!-- Output Layer -->
+<circle cx="420" cy="170" r="18" fill="#22c55e"/>
+<circle cx="420" cy="250" r="18" fill="#22c55e"/>
+
+<!-- Connections -->
+<g stroke="#94a3b8" stroke-width="1.5">
+<line x1="98" y1="90" x2="232" y2="70"/>
+<line x1="98" y1="90" x2="232" y2="140"/>
+<line x1="98" y1="170" x2="232" y2="140"/>
+<line x1="98" y1="170" x2="232" y2="210"/>
+<line x1="98" y1="250" x2="232" y2="210"/>
+<line x1="98" y1="250" x2="232" y2="280"/>
+<line x1="98" y1="330" x2="232" y2="280"/>
+<line x1="98" y1="330" x2="232" y2="350"/>
+
+<line x1="268" y1="70" x2="402" y2="170"/>
+<line x1="268" y1="140" x2="402" y2="170"/>
+<line x1="268" y1="210" x2="402" y2="210"/>
+<line x1="268" y1="280" x2="402" y2="250"/>
+<line x1="268" y1="350" x2="402" y2="250"/>
+</g>
+
+<!-- Labels -->
+<text x="55" y="30" font-size="16" fill="#1e293b" font-weight="bold">Inputs</text>
+<text x="215" y="30" font-size="16" fill="#1e293b" font-weight="bold">Hidden Layers</text>
+<text x="390" y="30" font-size="16" fill="#1e293b" font-weight="bold">Outputs</text>
+
+<text x="120" y="400" font-size="15" fill="#334155">
+Neural Network Example • Train → Predict → Improve
+</text>
+
+</svg>
+
+</div>
+
+</div>
+
+<div class="section card">
+<h2>Business Applications</h2>
+<p>
+Machine learning can be applied to forecasting demand, fraud detection, churn prediction,
+recommendation engines, anomaly detection, and operational optimisation.
+This project showcases how raw data can be transformed into measurable business outcomes.
+</p>
+</div>
+
+<div class="footer">
+Isaac's Data Science, AI and Engineering Portfolio
+</div>
+
+</div>
+
+</body>
+</html>
