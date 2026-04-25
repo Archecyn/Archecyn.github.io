@@ -1,3 +1,233 @@
-<h1>Natural Language Processing</h1>
-<p>LLMs, embeddings, and text-based AI systems for real-world applications.</p>
-<a href="https://github.com/Archecyn/natural-language-processing">View Repo</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natural Language Processing | Isaac's Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.hero {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+    color: white;
+    border-radius: 18px;
+    padding: 40px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 760px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+ul {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.repo-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.repo-btn:hover {
+    background: #1d4ed8;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    margin-top: 60px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back-link">← Back to Portfolio</a>
+
+<div class="hero">
+    <h1>Natural Language Processing</h1>
+    <p>
+        Building intelligent systems that understand, generate, and analyse human language.
+        This project area focuses on LLM workflows, text analytics, embeddings, search,
+        summarisation, sentiment analysis, and conversational AI.
+    </p>
+</div>
+
+<div class="section grid">
+
+<div class="card">
+    <h2>Project Focus</h2>
+    <p>
+        This repository demonstrates practical NLP systems using modern language models
+        and classical text processing techniques. It turns raw text into structured insight
+        and usable products.
+    </p>
+
+    <ul>
+        <li>Large Language Models (LLMs)</li>
+        <li>Semantic Search & Embeddings</li>
+        <li>Text Classification</li>
+        <li>Summarisation Pipelines</li>
+        <li>Sentiment Analysis</li>
+        <li>Chatbots & AI Assistants</li>
+    </ul>
+
+    <a class="repo-btn" href="https://github.com/Archecyn/natural-language-processing" target="_blank">
+        View GitHub Repository
+    </a>
+</div>
+
+<div class="card">
+
+<svg viewBox="0 0 500 420">
+
+<!-- Background -->
+<rect x="0" y="0" width="500" height="420" rx="18" fill="#ecfeff"/>
+
+<!-- Input text box -->
+<rect x="45" y="55" width="410" height="70" rx="14" fill="#0f172a"/>
+<text x="70" y="95" fill="#38bdf8" font-size="15">Customer feedback: Delivery was fast...</text>
+
+<!-- Arrow -->
+<line x1="250" y1="125" x2="250" y2="165" stroke="#64748b" stroke-width="3"/>
+<polygon points="250,175 242,160 258,160" fill="#64748b"/>
+
+<!-- NLP Engine -->
+<rect x="140" y="175" width="220" height="80" rx="18" fill="#14b8a6"/>
+<text x="250" y="208" text-anchor="middle" fill="white" font-size="18" font-weight="bold">
+NLP Engine
+</text>
+<text x="250" y="232" text-anchor="middle" fill="white" font-size="13">
+Tokenise • Embed • Analyse
+</text>
+
+<!-- Output arrows -->
+<line x1="250" y1="255" x2="250" y2="285" stroke="#64748b" stroke-width="3"/>
+<polygon points="250,295 242,280 258,280" fill="#64748b"/>
+
+<!-- Outputs -->
+<rect x="35" y="305" width="130" height="60" rx="12" fill="#2563eb"/>
+<text x="100" y="338" text-anchor="middle" fill="white" font-size="14" font-weight="bold">
+Sentiment
+</text>
+<text x="100" y="355" text-anchor="middle" fill="white" font-size="12">
+Positive
+</text>
+
+<rect x="185" y="305" width="130" height="60" rx="12" fill="#7c3aed"/>
+<text x="250" y="338" text-anchor="middle" fill="white" font-size="14" font-weight="bold">
+Summary
+</text>
+<text x="250" y="355" text-anchor="middle" fill="white" font-size="12">
+Fast delivery
+</text>
+
+<rect x="335" y="305" width="130" height="60" rx="12" fill="#22c55e"/>
+<text x="400" y="338" text-anchor="middle" fill="white" font-size="14" font-weight="bold">
+Intent
+</text>
+<text x="400" y="355" text-anchor="middle" fill="white" font-size="12">
+Feedback
+</text>
+
+<!-- Footer text -->
+<text x="110" y="395" font-size="14" fill="#475569">
+Read • Understand • Generate • Assist
+</text>
+
+</svg>
+
+</div>
+
+</div>
+
+<div class="section card">
+<h2>Business Applications</h2>
+<p>
+Natural language processing powers customer support automation, enterprise search,
+document intelligence, chatbot assistants, sentiment tracking, compliance monitoring,
+knowledge management, and AI-driven productivity tools.
+</p>
+</div>
+
+<div class="footer">
+Isaac's Data Science, AI and Engineering Portfolio
+</div>
+
+</div>
+
+</body>
+</html>
